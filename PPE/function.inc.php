@@ -1,18 +1,13 @@
 <?php
 function connexion()
 {
-  $servername = "localhost";
-  $username = "root";
-  $password = "root";
-  $databasename = "ekara";
-  $port = "3306";
+  $user = 'root';
+  $password = 'root';
+  $db = 'ekara';
+  $host = 'localhost';
+  $port = '3307';
 
-  $con = mysqli_connect($localhost,$username,$password,$databasename, $port);
-
-      if (mysqli_connect_errno())
-      {
-          echo "Failed to connect to MySQL: " . mysqli_connect_error();
-      }
+  $con = mysqli_connect($host, $user, $password, $db, $port);
   return $con;
 }
 

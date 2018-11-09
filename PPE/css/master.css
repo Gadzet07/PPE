@@ -47,11 +47,18 @@ body{
   margin-right: auto;
 }
 */
+.inter{
+  margin-left: 1%;
+}
 .offresEmplois button{
   float: right;
   background-color: black;
   color: white;
   border: 0;
+  border-radius: 4px;
+  width: 35%;
+  height: 20%;
+  font-size: 15px;
 }
 
 .offresEmplois button:hover{
@@ -148,7 +155,7 @@ a:hover
   position: relative;
   top: 15px;
   left: 50px;
-
+  width: 70%;
   z-index: 1;
 
   -webkit-user-select: none;
@@ -240,7 +247,7 @@ a:hover
 #menu
 {
   position: absolute;
-  width: 6%;
+  width: 8.5%;
   margin: -100px 0 0 -50px;
   padding: 50px;
   padding-left: 25px;
@@ -326,14 +333,40 @@ button:hover {
 }
 
 /* Modal Content Box */
-.modal-content {
+.modal-inscription {
     background-color: #fefefe;
     margin: 4% auto 15% auto;
     border: 1px solid #888;
-    width: 40%;
+    width: auto;
+    border-radius: 10px;
 	padding-bottom: 30px;
 }
-
+.modal-connexion {
+    background-color: #fefefe;
+    margin: 4% auto 15% auto;
+    border: 1px solid #888;
+    width: 50%;
+    border-radius: 10px;
+	padding-bottom: 30px;
+}
+.modal-header{
+  padding: 6px;
+}
+.modal-header h3{
+  color: black;
+  text-align: center;
+  font-weight: bold;
+}
+.modal-header span{
+  float: right;
+}
+.modal-header button{
+  margin: 1px;
+}
+.con-input{
+  width: 40% !important;
+  margin-left: 30% !important;
+}
 /* The Close Button (x) */
 .close {
     position: absolute;
@@ -356,7 +389,15 @@ button:hover {
     from {transform: scale(0)}
     to {transform: scale(1)}
 }
-
 .modal-backdrop.in{
   z-index: -1;
+}
+
+.dropdown-menu>li>a{
+  padding-left: 0;
+  padding-right: 0;
+  text-align: center;
+  width: 50%;
+  margin-left: 0;
+  margin-right: 0;
 }

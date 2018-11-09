@@ -18,7 +18,7 @@ if (mysqli_num_rows($resultOffre) > 0) {
       echo "<div class='row inter'>";
       echo "<p>".$row['resumer']."</p>";
       echo "</div>";
-      echo "<button onClick='afficherDetails()'>Detail</button>";
+      echo "<button>Detail</button>";
       echo "</div>";
       if ($cptRow == 2) {
         echo "</div>";
